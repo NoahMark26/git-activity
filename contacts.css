@@ -1,0 +1,42 @@
+/* Apply basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to be a flex container for centering */
+body {
+    display: flex;
+    justify-content: center;   /* Horizontally center */
+    align-items: center;       /* Vertically center */
+    height: 100vh;             /* Make the body fill the entire viewport height */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style the table for better appearance */
+table {
+    width: 60%;                 /* Set the table width to 60% of the viewport */
+    border-collapse: collapse;  /* Remove spaces between table cells */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visuals */
+}
+
+/* Style for table headers */
+th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style for table cells */
+td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Light gray border for cells */
+}
+
+/* Add alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
